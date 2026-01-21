@@ -1,0 +1,15 @@
+{
+  "/api-bcv": {
+    "target": "https://www.bcv.org.ve",
+    "secure": false,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api-bcv": ""
+    },
+    "logLevel": "debug",
+    "headers": {
+      "User-Agent": "User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+      "Accept": "*/*"
+    }
+  }
+}
