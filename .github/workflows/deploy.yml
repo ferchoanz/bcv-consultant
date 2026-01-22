@@ -25,7 +25,7 @@ jobs:
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist/bcv-consultant/browser # Ajusta según tu carpeta de salida
+          path: dist/bcv-consultant/browser
 
       - name: Deploy to GitHub Pages
         id: deployment
