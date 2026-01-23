@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
+import { environment } from '@environments/environment';
 import { firstValueFrom } from 'rxjs';
 
 @Injectable({
@@ -10,7 +11,7 @@ export class BcvService {
 
   async getRawHtml(): Promise<string | null> {
     try {
-      return await firstValueFrom(this.httpClient.get('/api-bcv', { responseType: 'text' }));
+      return await firstValueFrom(this.httpClient.get(environment.bcvUrl, { responseType: 'text' }));
     } catch (error: any) {
       console.log(error);
       return null;
