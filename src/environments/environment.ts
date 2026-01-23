@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  bcvUrl: 'https://corsproxy.io/?https://www.bcv.org.ve'
+  apiUrl: 'https://thingproxy.freeboard.io/fetch/https://www.bcv.org.ve'
 };
